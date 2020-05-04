@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58C7A25B2C18FA8BEFD1003B /* main.go in Resources */ = {isa = PBXBuildFile; fileRef = 58C7AD08646382C6CC30BE13 /* main.go */; };
 		58C7A9D97409F44DC91E65EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 58C7AFCD2B3E9C8D5CEA2EB6 /* .gitignore */; };
 		58C7AE5623728AFF4A3360D0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A39E300F2C7DA146F0E9 /* README.md */; };
 		58C7AFB03E1134443B9257F3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A0A962DF87519D79523F /* Notifications.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		58C7A0A962DF87519D79523F /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		58C7A39E300F2C7DA146F0E9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		58C7AD08646382C6CC30BE13 /* main.go */ = {isa = PBXFileReference; lastKnownFileType = file.go; path = main.go; sourceTree = "<group>"; };
 		58C7AFCD2B3E9C8D5CEA2EB6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitinore; path = .gitignore; sourceTree = "<group>"; };
 		A8217DDC20DBD56300895832 /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8217DDF20DBD56300895832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				A8217DDD20DBD56300895832 /* Products */,
 				58C7AFCD2B3E9C8D5CEA2EB6 /* .gitignore */,
 				58C7A39E300F2C7DA146F0E9 /* README.md */,
+				58C7AD08646382C6CC30BE13 /* main.go */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +171,7 @@
 				A8217DE720DBD56400895832 /* Assets.xcassets in Resources */,
 				A8217DE520DBD56300895832 /* Main.storyboard in Resources */,
 				58C7A9D97409F44DC91E65EE /* .gitignore in Resources */,
+				58C7A25B2C18FA8BEFD1003B /* main.go in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
