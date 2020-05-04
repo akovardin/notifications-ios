@@ -15,7 +15,21 @@
 		A8217DE720DBD56400895832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE620DBD56400895832 /* Assets.xcassets */; };
 		A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE820DBD56400895832 /* LaunchScreen.storyboard */; };
 		A8217DF420DCAF4E00895832 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8217DF320DCAF4E00895832 /* TableViewController.swift */; };
+		AC3D5492245FE89B00C4553A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3D5491245FE89B00C4553A /* icon.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC087CDE24604EB600C147D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		58C7A0A962DF87519D79523F /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
@@ -28,6 +42,10 @@
 		A8217DE920DBD56400895832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8217DEB20DBD56400895832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8217DF320DCAF4E00895832 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AC087CB92460394600C147D4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AC087CBB2460394600C147D4 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		AC3D5491245FE89B00C4553A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
+		AC3D5493245FF70400C4553A /* Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifications.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A8217DDE20DBD56300895832 /* Notifications */,
+				AC087CB82460394600C147D4 /* Frameworks */,
 				A8217DDD20DBD56300895832 /* Products */,
 				58C7AFCD2B3E9C8D5CEA2EB6 /* .gitignore */,
 				58C7A39E300F2C7DA146F0E9 /* README.md */,
@@ -62,6 +81,8 @@
 		A8217DDE20DBD56300895832 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				AC3D5493245FF70400C4553A /* Notifications.entitlements */,
+				AC3D5491245FE89B00C4553A /* icon.png */,
 				A8217DDF20DBD56300895832 /* AppDelegate.swift */,
 				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
 				A8217DE320DBD56300895832 /* Main.storyboard */,
@@ -71,6 +92,15 @@
 				58C7A0A962DF87519D79523F /* Notifications.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		AC087CB82460394600C147D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC087CB92460394600C147D4 /* UserNotifications.framework */,
+				AC087CBB2460394600C147D4 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,7 @@
 				A8217DD820DBD56300895832 /* Sources */,
 				A8217DD920DBD56300895832 /* Frameworks */,
 				A8217DDA20DBD56300895832 /* Resources */,
+				AC087CDE24604EB600C147D4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -99,12 +130,13 @@
 		A8217DD420DBD56300895832 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Alexey Efimov";
 				TargetAttributes = {
 					A8217DDB20DBD56300895832 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -132,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */,
+				AC3D5492245FE89B00C4553A /* icon.png in Resources */,
 				A8217DE720DBD56400895832 /* Assets.xcassets in Resources */,
 				A8217DE520DBD56300895832 /* Main.storyboard in Resources */,
 				58C7A9D97409F44DC91E65EE /* .gitignore in Resources */,
@@ -291,16 +324,19 @@
 		A8217DEF20DBD56400895832 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
 				INFOPLIST_FILE = Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Notifications;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -308,16 +344,19 @@
 		A8217DF020DBD56400895832 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
 				INFOPLIST_FILE = Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Notifications;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
